@@ -288,12 +288,16 @@ q {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #bloc-1-hero h1 {
@@ -360,7 +364,7 @@ q {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     width: 26px;
 }
 
@@ -872,13 +876,13 @@ footer .col-sm-12 p {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -896,10 +900,7 @@ footer .col-sm-12 p {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -908,8 +909,6 @@ footer .col-sm-12 p {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -941,7 +940,7 @@ footer .col-sm-12 p {
         margin-left: 0;
         margin-right: 0;
     }
-    container bloc-lg p. {
+    container bloc-lg p {
         color: #ffffff;
     }
     .site-navigation {
