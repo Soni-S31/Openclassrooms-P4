@@ -73,7 +73,9 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-
+aside .tc-white {
+    color: white !important;
+}
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -696,7 +698,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
